@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2C537F2C25941E4000FC0AFD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C537F2B25941E4000FC0AFD /* main.swift */; };
+		2C537F692594F8F600FC0AFD /* FleetWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C537F682594F8F600FC0AFD /* FleetWordsTests.swift */; };
+		2C537F702594F90000FC0AFD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C537F2B25941E4000FC0AFD /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +27,20 @@
 /* Begin PBXFileReference section */
 		2C537F2825941E4000FC0AFD /* FleetWords */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FleetWords; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C537F2B25941E4000FC0AFD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2C537F662594F8F600FC0AFD /* FleetWordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FleetWordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C537F682594F8F600FC0AFD /* FleetWordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetWordsTests.swift; sourceTree = "<group>"; };
+		2C537F6A2594F8F600FC0AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2C537F2525941E4000FC0AFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C537F632594F8F600FC0AFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				2C537F2A25941E4000FC0AFD /* FleetWords */,
+				2C537F672594F8F600FC0AFD /* FleetWordsTests */,
 				2C537F2925941E4000FC0AFD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				2C537F2825941E4000FC0AFD /* FleetWords */,
+				2C537F662594F8F600FC0AFD /* FleetWordsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +74,15 @@
 				2C537F2B25941E4000FC0AFD /* main.swift */,
 			);
 			path = FleetWords;
+			sourceTree = "<group>";
+		};
+		2C537F672594F8F600FC0AFD /* FleetWordsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C537F682594F8F600FC0AFD /* FleetWordsTests.swift */,
+				2C537F6A2594F8F600FC0AFD /* Info.plist */,
+			);
+			path = FleetWordsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +105,23 @@
 			productReference = 2C537F2825941E4000FC0AFD /* FleetWords */;
 			productType = "com.apple.product-type.tool";
 		};
+		2C537F652594F8F600FC0AFD /* FleetWordsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C537F6B2594F8F600FC0AFD /* Build configuration list for PBXNativeTarget "FleetWordsTests" */;
+			buildPhases = (
+				2C537F622594F8F600FC0AFD /* Sources */,
+				2C537F632594F8F600FC0AFD /* Frameworks */,
+				2C537F642594F8F600FC0AFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FleetWordsTests;
+			productName = FleetWordsTests;
+			productReference = 2C537F662594F8F600FC0AFD /* FleetWordsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +132,9 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					2C537F2725941E4000FC0AFD = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					2C537F652594F8F600FC0AFD = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
 				};
@@ -110,9 +153,20 @@
 			projectRoot = "";
 			targets = (
 				2C537F2725941E4000FC0AFD /* FleetWords */,
+				2C537F652594F8F600FC0AFD /* FleetWordsTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C537F642594F8F600FC0AFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C537F2425941E4000FC0AFD /* Sources */ = {
@@ -120,6 +174,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C537F2C25941E4000FC0AFD /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C537F622594F8F600FC0AFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C537F702594F90000FC0AFD /* main.swift in Sources */,
+				2C537F692594F8F600FC0AFD /* FleetWordsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +322,40 @@
 			};
 			name = Release;
 		};
+		2C537F6C2594F8F600FC0AFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FleetWordsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chandu.FleetWordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2C537F6D2594F8F600FC0AFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FleetWordsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chandu.FleetWordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -276,6 +373,15 @@
 			buildConfigurations = (
 				2C537F3025941E4100FC0AFD /* Debug */,
 				2C537F3125941E4100FC0AFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C537F6B2594F8F600FC0AFD /* Build configuration list for PBXNativeTarget "FleetWordsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C537F6C2594F8F600FC0AFD /* Debug */,
+				2C537F6D2594F8F600FC0AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
